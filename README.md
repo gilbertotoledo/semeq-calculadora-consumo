@@ -1,0 +1,1 @@
+# semeq-calculadora-consumo
