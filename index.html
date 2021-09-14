@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <h1>Calculadora de Consumo</h1>
+    <form>
+        <div class="campo_form">
+            <label>Valor da conta R$: </label>
+            <input type="number" id="valor_conta">
+        </div>
+
+        <div class="campo_form">
+            <label>Consumo em Kwh: </label>
+            <input type="number" id="consumo_conta">
+            <input type="button" on onclick="onClickCalcularCustoKwh()" value="Calcular custo Kwh">
+        </div>
+
+        <div class="campo_form">
+            <label>Custo do Kwh: </label>
+            <input type="number" id="custo_kwh">
+        </div>
+    </form>
+
+    <hr>
+    <form>
+        <div class="campo_form">
+            <label>Quantidade: </label>
+            <input type="number" id="quantidade">
+        </div>
+
+        <div class="campo_form">
+            <label>Descrição: </label>
+            <input type="text" id="descricao">
+        </div>
+
+        <div class="campo_form">
+            <label>Consumo unitário: W</label>
+            <input type="number" id="consumo_unitario">
+        </div>
+
+        <div class="campo_form">
+            <label>Horas/dia</label>
+            <input type="number" id="horas_por_dia">
+        </div>
+
+        <div class="campo_form">
+            <input type="button" onclick="onClickCadastrar()" value="Cadastrar">
+        </div>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Qtd.</th>
+                <th>Descrição</th>
+                <th>Consumo Unit.</th>
+                <th>Horas/dia</th>
+                <th>Custo/hora</th>
+                <th>Custo Mensal</th>
+                <th>Remover</th>
+            </tr>
+        </thead>
+        <tbody id="equipamentos">
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th id="consumo_mensal_total"></th>
+                <th></th>
+                <th></th>
+                <th id="custo_mensal_total"></th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+</body>
+</html>

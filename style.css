@@ -1,0 +1,13 @@
+.campo_form{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td{
+    border: solid 1px black;
+}
