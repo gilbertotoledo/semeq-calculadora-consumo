@@ -12,6 +12,7 @@ function onClickCalcularCustoKwh(){
 }
 
 let equipamentos = [];
+//Teste de commit
 
 function onClickCadastrar(){
     let quantidade = document.getElementById("quantidade").value;
